@@ -1,0 +1,2 @@
+#!/bin/bash
+mkdir bin & ln -s __ls__ bin/__ls__
