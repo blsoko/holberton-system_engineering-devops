@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir bin & ln -s __ls__ bin/__ls__
+sudo ln -s __ls__ /bin/ls/__ls__
