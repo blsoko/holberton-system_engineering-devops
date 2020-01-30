@@ -1,2 +1,2 @@
 #!/bin/bash
-chown username:groupname ./*
+chown betty:holberton ./*
