@@ -1,2 +1,0 @@
-#!/bin/bash
-unmask 751 & mkdir test
