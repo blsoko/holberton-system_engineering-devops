@@ -1,2 +1,2 @@
-#!/bin/bash
-ls -lRa | grep ./*/ | wc -l
+y#!/bin/bash
+ls ./*/ 
