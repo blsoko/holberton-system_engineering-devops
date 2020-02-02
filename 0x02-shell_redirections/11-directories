@@ -1,2 +1,2 @@
-y#!/bin/bash
-ls ./*/ 
+#!/bin/bash
+find .*/ -maxdepth 1 -type d | wc -l
