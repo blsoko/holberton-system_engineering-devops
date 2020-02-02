@@ -1,1 +1,1 @@
-Learn script and shell usages
+Learn wildcards, pipes, and linux command usages
