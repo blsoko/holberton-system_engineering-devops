@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times + if condition 4th 9th 17th iteration
+# clock
 i=1
 hour=0
 while [ $i -le 59 ]
