@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times + if condition 4th 9th 17th iteration
+i=1
+hour=0
+while [ $i -le 59 ]
+do
+    if [ $i -eq 1 ]
+    then
+        echo "Hour: $hour"
+    fi
+    echo "$i"
+    if [ $i -eq 59 ] && [ $hour -eq 12 ]
+    then
+        break
+    elif [ $i -eq 59 ]
+    then
+        i=$(( i - i ))
+        hour=$(( hour + 1 ))
+    fi
+    i=$(( i + 1 ))
+done
