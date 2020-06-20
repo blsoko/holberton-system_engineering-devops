@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times + if condition 4th 9th 17th iteration
+FILE="holbertonschool"
+if [ -e "$FILE" ]
+then
+    echo "holbertonschool file exists"
+    if [ -s "$FILE" ]
+    then
+        echo "holbertonschool file is not empty"
+        if [ -f "$FILE" ]
+        then
+            echo "holbertonschool is a regular file"
+        fi
+    else
+        echo "holbertonschool file is empty"
+    fi
+else
+    echo "holbertonschool file does not exist"
+fi
