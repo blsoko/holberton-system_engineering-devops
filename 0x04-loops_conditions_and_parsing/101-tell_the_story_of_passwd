@@ -1,0 +1,8 @@
+#!/bin/bash
+# setupapachevhost.sh - Apache webhosting automation demo script
+file=/etc/passwd
+IFS=:
+while read -r username password userid groupid useridinfo home commandshell
+do
+        echo "The user $username is part of the $groupid gang, lives in $home and rides $commandshell. $userid's place is protected by the passcode $password, more info about the user here: $useridinfo"
+done < "$file"

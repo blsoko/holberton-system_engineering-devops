@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ls print + dash
+# ls read and cut
 input="/etc/passwd"
 while IFS= read -r line
 do
