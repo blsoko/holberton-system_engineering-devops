@@ -1,5 +1,5 @@
-#!/bin/bash
-# setupapachevhost.sh - Apache webhosting automation demo script
+#!/usr/bin/env bash
+# passwd story
 file="/etc/passwd"
 IFS=:
 while read -r username password userid groupid useridinfo home commandshell
