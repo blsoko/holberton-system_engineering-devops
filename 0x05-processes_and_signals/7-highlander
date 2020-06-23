@@ -2,7 +2,7 @@
 # Do a process unkillable
 while true
 do
-    trap 'echo "I am invencible"' SIGTERM
+    trap 'echo "I am invincible!!!"' SIGTERM
     echo "To infinity and beyond"
     sleep 2
 done
