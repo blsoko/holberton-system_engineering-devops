@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#log into a remote server
+cat input.txt | ssh-keygen -b 4096
