@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Install nginx web server
+apt -y update
+apt -y install nginx
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+tmprary="server_name _;\nrewrite /redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4/ permanent;\n"
+sed -i 's|server_name _;|'"$tmprary"'|' /etc/nginx/sites-enabled/default
+sudo service nginx restart
