@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Gather data from HTTP Response """
 from sys import argv
+import json
 import requests
 
 if __name__ == "__main__":
