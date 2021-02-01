@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """ Gather data from HTTP Response """
-from sys import argv
 import json
 import requests
+from sys import argv
+
 
 if __name__ == "__main__":
     empName = ""
