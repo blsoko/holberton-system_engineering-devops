@@ -15,12 +15,12 @@ if __name__ == "__main__":
             doTask_list.append(r.json()[i].get('completed'))
             employee_list.append(r.json()[i].get('title'))
     r = requests.get('https://jsonplaceholder.typicode.com/users')
-    empName = r.json()[userid - 1].get('name')
+    empName = r.json()[userid - 1].get('username')
 
     with open('{}.csv'.format(userid), mode='w') as employee_file:
         employee_writer = csv.writer(employee_file, delimiter=',',
-                                     quoting=csv.QUOTE_NONNUMERIC)
+                                     quoting=csv.QUOTE_ALL)
         for status, tittle in zip(doTask_list, employee_list):
-            employee_writer.writerow(['{}'.format(userid), "{}"
-                                     .format(empName), "{}".format(status),
-                                     "{}".format(tittle)])
+            employee_writer.writerow([userid,
+                                     empName, status,
+                                     tittle])
