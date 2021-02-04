@@ -13,9 +13,9 @@ def top_ten(subreddit):
                "Mobile/14E5239e Safari/602.1 RuxitSynthetic/1.0 v8554859393 "
                "t1099441676816697146 ath9b965f92 altpub cvcv=2"}
     response = requests.get(url, headers=headers)
-    fullDirection = response.json().get('data').get('children')
     count = 0
     if response.status_code == 200:
+        fullDirection = response.json().get('data').get('children')
         for i in fullDirection:
             if count == 10:
                 break
