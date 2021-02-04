@@ -21,4 +21,5 @@ def top_ten(subreddit):
                 break
             print(i.get("data").get("title"))
             count += 1
-    print('None')
+    else:
+        print('None')
